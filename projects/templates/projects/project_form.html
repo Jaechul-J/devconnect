@@ -2,12 +2,10 @@
 
 <h1>Project Form</h1>
 
-<form method="POST">
-  {% csrf_token %} {% for field in form %}
-  <!-- comment -->
-  {{field.label}} {{field}}
-  <!-- Comment  -->
-  {% endfor %}
+<form action="" method="POST">
+  {% csrf_token %}
+  <!-- Comment -->
+  {{form.as_p}}
   <input type="submit" />
 </form>
 {% endblock %}
