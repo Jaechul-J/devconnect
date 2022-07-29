@@ -2,7 +2,8 @@
 
 <h1>Project Form</h1>
 
-<form action="" method="POST">
+<!-- enctype submits the actual file -->
+<form action="" method="POST" enctype="multipart/form-data">
   {% csrf_token %}
   <!-- Comment -->
   {{form.as_p}}
